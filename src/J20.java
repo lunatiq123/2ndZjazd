@@ -1,11 +1,11 @@
 import java.util.Random;
 
-
 public class J20 {
 
     public static void main(String[] args) {
         Random ran = new Random();
         int liczba;
+        int suma = 0;
 
         int[] tablica = new int[20];
         System.out.println("20 losowych liczb od 1 do 20 (tablica) : ");
@@ -17,9 +17,19 @@ public class J20 {
 
             System.out.print(" " + tablica[i]);
         }
+        System.out.println();
+
+        for (int j = 0; j < tablica.length; j++) {
+            if (j == tablica[j]) {
+                suma++; }
+            System.out.println(j + " występuje " + suma + " raz(y)");
+
+            }
+        }
 
     }
-}
+
+
 
  /*
  Ćwiczenie J20
