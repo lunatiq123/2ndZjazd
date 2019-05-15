@@ -11,26 +11,23 @@ public class J20 {
         System.out.println("20 losowych liczb od 1 do 20 (tablica) : ");
 
         for (int i = 0; i < tablica.length; i++) {
-
-            liczba = ran.nextInt(19) + 1;
-            tablica[i] = i + liczba;
-
+            liczba = ran.nextInt(20);
+            tablica[i] = liczba;
             System.out.print(" " + tablica[i]);
         }
         System.out.println();
 
-        for (int j = 0; j < tablica.length; j++) {
-            if (j == tablica[j]) {
-                suma++; }
-            System.out.println(j + " występuje " + suma + " raz(y)");
+        /*
+        {
+            for (int j = 0; j < tablica.length; j++) {
+                if (j == tablica[j]) {
+                    suma++; }
+                System.out.println(j + " występuje " + suma + " raz(y)");
 
             }
-        }
-
+*/
     }
-
-
-
+}
  /*
  Ćwiczenie J20
   Napisz program, który utworzy tablicę 20 liczb całkowitych z przedziału
