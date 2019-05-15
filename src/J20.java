@@ -1,42 +1,34 @@
+
 import java.util.Random;
 
 public class J20 {
-
     public static void main(String[] args) {
         Random ran = new Random();
-        int liczba;
         int ile = 0;
-
         int[] tablica = new int[20];
 
-        System.out.println("20 losowych liczb od 1 do 20 (tablica) : ");
+
+        System.out.println("20 losowych liczb od 1 do 20 (tablica):");
 
         for (int i = 0; i < tablica.length; i++) {
-            liczba = ran.nextInt(20);
-            tablica[i] = liczba;
+            tablica[i] = ran.nextInt(20);
             System.out.print(" " + tablica[i]);
-        }
 
-/*
-// dac petle for-each na przegląd tablicy?
 
-        for (int j = 0; j < tablica.length; j++) {
-            if (j == tablica[i]) {
-                ile++;
-                System.out.println("Liczba " + j + " występuje " + ile + " razy");
+            for (int j = 0; j < tablica.length; j++) {
+                if (tablica[i] == tablica[i]) {
+                    ile++;
+                }
 
             }
+
+            System.out.println("Liczba " + tablica[i] + " występuje " + (ile + 1) + " razy");
+
         }
 
-
-
- */
     }
+
 }
-
-
-
-
 
 
 
