@@ -16,7 +16,7 @@ public class J20 {
 
 
             for (int j = 0; j < tablica.length; j++) {
-                if (tablica[i] == tablica[i]) {
+                if (j == tablica[i]) {
                     ile++;
                 }
 
