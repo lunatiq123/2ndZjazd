@@ -1,34 +1,42 @@
 
 import java.util.Random;
+import java.util.Arrays;
 
 public class J20 {
     public static void main(String[] args) {
         Random ran = new Random();
         int ile = 0;
+        int liczba;
         int[] tablica = new int[20];
-
-
-        System.out.println("20 losowych liczb od 1 do 20 (tablica):");
+        System.out.println("20 losowych liczb od 1 do 10 :");
 
         for (int i = 0; i < tablica.length; i++) {
-            tablica[i] = ran.nextInt(20);
+            tablica[i] = (ran.nextInt(10)+1);
             System.out.print(" " + tablica[i]);
 
-
-            for (int j = 0; j < tablica.length; j++) {
-                if (j == tablica[i]) {
-                    ile++;
-                }
-
-            }
-
-            System.out.println("Liczba " + tablica[i] + " występuje " + (ile + 1) + " razy");
-
+       }
+        System.out.println();
+        System.out.println(Arrays.toString(tablica));
+        for (:
+             ) {
+            
         }
+        //System.out.println("Liczba " + liczba + " występuje " + ile + " razy");
 
     }
 
+
 }
+
+
+
+
+
+
+
+
+
+
 
 
 
