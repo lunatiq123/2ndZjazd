@@ -17,16 +17,20 @@ public class J20 {
        }
         System.out.println();
         System.out.println(Arrays.toString(tablica));
-        for (:
+        for (int x:tablica
              ) {
-            
+                ile++;
+            }
+
+        System.out.println("Liczba " +  " występuje " + ile + " razy");
+
         }
-        //System.out.println("Liczba " + liczba + " występuje " + ile + " razy");
+
 
     }
 
 
-}
+
 
 
 
