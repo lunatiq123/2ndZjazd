@@ -18,16 +18,12 @@ public class J20 {
         System.out.println();
         System.out.println(Arrays.toString(tablica));
 
-
         for (int x : tablica) {
 
             for (int i = 0; i < tablica.length; i++) {
 
-                if (x == tablica[i]) {
-
+                if (x == tablica[i])
                     ile++;
-                }
-
 
             }
 
