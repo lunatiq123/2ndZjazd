@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class J20 {
     public static void main(String[] args) {
         Random ran = new Random();
-        int ile = 0;
+
 
         int[] tablica = new int[20];
         System.out.println("20 losowych liczb od 1 do 10 :");
@@ -19,12 +19,11 @@ public class J20 {
         System.out.println(Arrays.toString(tablica));
 
         for (int x : tablica) {
-
+            int ile = 0;
             for (int i = 0; i < tablica.length; i++) {
 
                 if (x == tablica[i])
                     ile++;
-
             }
 
             System.out.println("Liczba " + x + " występuje " + ile + " razy");
