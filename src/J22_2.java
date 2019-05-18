@@ -29,7 +29,7 @@ public class J22_2 {
 
 
 //jak zdaze to zamista metody Collections pomysle nad wlasnym algorytmem
-
+//J17_1 check
 
        }
 

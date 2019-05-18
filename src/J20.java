@@ -27,6 +27,9 @@ public class J20 {
             }
 
             System.out.println("Liczba " + x + " występuje " + ile + " razy");
+
+
+
         }
 
     }
