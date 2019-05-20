@@ -3,12 +3,12 @@ package J30_3;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class KursContoller {
+public class KursController {
 
     ArrayList<Kurs> kursLista = new ArrayList<>();
     Scanner sc = new Scanner(System.in);
 
-    public KursContoller() {
+    public KursController() {
         while (true) {
 
             System.out.println("D-dodaj, U-usun, E-edytuj, W-wyświetl, K-koniec");
@@ -25,6 +25,7 @@ public class KursContoller {
                 break;
             }
         }
+
     }
 
     public void addKurs() {
@@ -54,7 +55,7 @@ public class KursContoller {
 
         for (Kurs tmp : kursLista) {
             if (tmp.getNazwaKursu().equals(nazwaKursu)) {
-                System.out.println("Podaj nazwę kursu");
+                System.out.println("Podaj nową nazwę kursu");
                 String nowyKurs = sc.nextLine();
 
                 if (!nowyKurs.equals("")) {
@@ -63,6 +64,7 @@ public class KursContoller {
             }
         }
     }
+
 
     public void showKurs() {
         for (Kurs tmp : kursLista) {

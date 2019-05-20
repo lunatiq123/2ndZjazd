@@ -1,9 +1,10 @@
 package J30_3;
 
-public class Kurs extends KursContoller {
+public class Kurs {
 
     public Kurs(){
     }
+
 
     String nazwaKursu;
 
@@ -27,5 +28,6 @@ public class Kurs extends KursContoller {
         return "Kurs{" +
                 "nazwaKursu='" + nazwaKursu + '\'' +
                 '}';
+
     }
 }

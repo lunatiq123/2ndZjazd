@@ -4,8 +4,7 @@ public class Run {
 
     public static void main(String[] args) {
 
-       Kurs kurs = new Kurs();
-
+       KursController controller  = new KursController();
 
     }
 
