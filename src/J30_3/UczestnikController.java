@@ -42,8 +42,7 @@ public class UczestnikController {
         nazwaKursu = sc.nextLine();
         Uczestnik uczestnik = new Uczestnik(imie, nazwisko, nazwaKursu);
         uczestnikLista.add(uczestnik);
-
-
+        Kurs.student++;
     }
 
     public void delUser() {
@@ -53,6 +52,7 @@ public class UczestnikController {
         for (Uczestnik tmp : uczestnikLista) {
             if (tmp.getNazwisko().equals(nazwisko)) {
                 uczestnikLista.remove(tmp);
+                Kurs.student--;
                 break;
             }
         }
@@ -83,13 +83,9 @@ public class UczestnikController {
         }
     }
 
-
     public void showUser() {
         for (Uczestnik tmp : uczestnikLista) {
             System.out.println(tmp);
         }
-
     }
-
-
 }

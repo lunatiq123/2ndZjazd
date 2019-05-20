@@ -32,11 +32,12 @@ public class KursController {
 
     public void addKurs() {
         String nazwaKursu;
+        int student = 0;
         System.out.println("Podaj nazwę kursu");
         nazwaKursu = sc.nextLine();
-        Kurs kurs = new Kurs(nazwaKursu);
+        Kurs kurs = new Kurs(nazwaKursu, student);
         kursLista.add(kurs);
-        Uczestnik.count++;
+
 
     }
 
@@ -47,7 +48,6 @@ public class KursController {
         for (Kurs tmp : kursLista) {
             if (tmp.getNazwaKursu().equals(nazwaKursu)) {
                 kursLista.remove(tmp);
-                Uczestnik.count--;
                 break;
             }
         }
@@ -70,20 +70,17 @@ public class KursController {
         }
     }
 
-
     public void showKurs() {
         for (Kurs tmp : kursLista) {
-            System.out.println(tmp);
-           // System.out.println(Uczestnik.count); - liczy kursy nie uczestników
-        }
 
+            System.out.println(tmp);
+        }
+        //System.out.println(Uczestnik.count);
 
     }
 
     public void userKurs() {
-
         UczestnikController userController = new UczestnikController();
-
     }
 
 }
