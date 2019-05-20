@@ -9,6 +9,7 @@ public class Kurs extends Uczestnik {
     String nazwaKursu;
 
 
+
     public Kurs(String nazwaKursu) {
         this.nazwaKursu = nazwaKursu;
     }
