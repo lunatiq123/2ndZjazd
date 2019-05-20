@@ -74,7 +74,9 @@ public class KursController {
     public void showKurs() {
         for (Kurs tmp : kursLista) {
             System.out.println(tmp);
+           // System.out.println(Uczestnik.count); - liczy kursy nie uczestników
         }
+
 
     }
 

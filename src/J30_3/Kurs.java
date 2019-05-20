@@ -7,6 +7,7 @@ public class Kurs extends Uczestnik {
 
 
     String nazwaKursu;
+    static int count = 0;
 
 
 

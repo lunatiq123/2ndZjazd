@@ -1,10 +1,9 @@
 package J30_3;
 
 
-
 public class Uczestnik {
 
-    public  Uczestnik () {
+    public Uczestnik() {
     }
 
     private String imie;
@@ -12,17 +11,19 @@ public class Uczestnik {
     String nazwaKursu;
     static int count = 0;
 
-    public Uczestnik(String imie, String nazwisko) {
+
+    public Uczestnik(String imie, String nazwisko, String nazwaKursu) {
         this.imie = imie;
         this.nazwisko = nazwisko;
-    }
-
-    public String getImie() {
-        return imie;
+        this.nazwaKursu = nazwaKursu;
     }
 
     public String getNazwisko() {
         return nazwisko;
+    }
+
+    public String getNazwaKursu() {
+        return nazwaKursu;
     }
 
     public void setImie(String imie) {
@@ -31,6 +32,10 @@ public class Uczestnik {
 
     public void setNazwisko(String nazwisko) {
         this.nazwisko = nazwisko;
+    }
+
+    public void setNazwaKursu(String nazwaKursu) {
+        this.nazwaKursu = nazwaKursu;
     }
 
     @Override
@@ -42,4 +47,3 @@ public class Uczestnik {
                 '}';
     }
 }
-

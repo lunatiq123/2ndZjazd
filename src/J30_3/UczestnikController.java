@@ -33,11 +33,14 @@ public class UczestnikController {
     public void addUser() {
         String imie;
         String nazwisko;
+        String nazwaKursu;
         System.out.println("Podaj imię");
         imie = sc.nextLine();
         System.out.println("Podaj nazwisko");
         nazwisko = sc.nextLine();
-        Uczestnik uczestnik = new Uczestnik(imie, nazwisko);
+        System.out.println("Podaj nazwę kursu");
+        nazwaKursu = sc.nextLine();
+        Uczestnik uczestnik = new Uczestnik(imie, nazwisko, nazwaKursu);
         uczestnikLista.add(uczestnik);
 
 
@@ -69,7 +72,6 @@ public class UczestnikController {
                     tmp.setImie(noweImie);
                 }
 
-
                 System.out.println("Podaj nowe nazwisko");
                 String noweNazwisko = sc.nextLine();
 
@@ -77,8 +79,6 @@ public class UczestnikController {
                     tmp.setNazwisko(noweNazwisko);
 
                 }
-
-
             }
         }
     }

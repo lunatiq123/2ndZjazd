@@ -6,10 +6,6 @@ public class KursRun {
 
         KursController controller = new KursController();
 
-        //menu Usera
-        // UczestnikController userController = new UczestnikController();
-
-
     }
 
 }
