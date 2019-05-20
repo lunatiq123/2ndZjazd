@@ -4,11 +4,10 @@ public class KursRun {
 
     public static void main(String[] args) {
 
-       KursController controller  = new KursController();
+        KursController controller = new KursController();
 
-       //menu Usera
+        //menu Usera
         // UczestnikController userController = new UczestnikController();
-
 
 
     }

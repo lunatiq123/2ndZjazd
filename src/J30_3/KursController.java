@@ -11,7 +11,7 @@ public class KursController {
     public KursController() {
         while (true) {
 
-            System.out.println("D-dodaj, U-usun, E-edytuj, W-wyświetl, K-koniec");
+            System.out.println("D-dodaj, U-usun, E-edytuj, W-wyświetl, X-uczestnik, K-koniec");
             String dec = sc.nextLine().toUpperCase();
             if (dec.equals("D")) {
                 addKurs();
@@ -21,6 +21,8 @@ public class KursController {
                 editKurs();
             } else if (dec.equals("W")) {
                 showKurs();
+            } else if (dec.equals("X")) {
+                userKurs();
             } else if (dec.equals("K")) {
                 break;
             }
@@ -73,8 +75,13 @@ public class KursController {
         for (Kurs tmp : kursLista) {
             System.out.println(tmp);
         }
-       
+
     }
 
+    public void userKurs() {
+
+        UczestnikController userController = new UczestnikController();
+
+    }
 
 }
