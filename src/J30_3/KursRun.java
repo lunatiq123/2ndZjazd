@@ -1,6 +1,6 @@
 package J30_3;
 
-public class Run {
+public class KursRun {
 
     public static void main(String[] args) {
 

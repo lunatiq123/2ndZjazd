@@ -34,6 +34,8 @@ public class KursController {
         nazwaKursu = sc.nextLine();
         Kurs kurs = new Kurs(nazwaKursu);
         kursLista.add(kurs);
+        Uczestnik.count++;
+
     }
 
     public void delKurs() {
@@ -43,6 +45,7 @@ public class KursController {
         for (Kurs tmp : kursLista) {
             if (tmp.getNazwaKursu().equals(nazwaKursu)) {
                 kursLista.remove(tmp);
+                Uczestnik.count--;
                 break;
             }
         }
@@ -70,9 +73,7 @@ public class KursController {
         for (Kurs tmp : kursLista) {
             System.out.println(tmp);
         }
-        if (kursLista == null) {
-            System.out.println("Lista jest pusta");
-        }
+       
     }
 
 
