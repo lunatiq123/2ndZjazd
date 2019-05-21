@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class KursController {
-
+//CHANGE ARRAY TO... ARRAY NIE MOZE PRZECHOWYWAC STRING I INTEGER NA RAZ:MOZE MAPA? CHECK
     ArrayList<Kurs> kursLista = new ArrayList<>();
     Scanner sc = new Scanner(System.in);
 
@@ -37,7 +37,6 @@ public class KursController {
         nazwaKursu = sc.nextLine();
         Kurs kurs = new Kurs(nazwaKursu, student);
         kursLista.add(kurs);
-
 
     }
 
@@ -75,7 +74,6 @@ public class KursController {
 
             System.out.println(tmp);
         }
-        //System.out.println(Uczestnik.count);
 
     }
 

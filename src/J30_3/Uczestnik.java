@@ -9,7 +9,7 @@ public class Uczestnik {
     private String imie;
     private String nazwisko;
     String nazwaKursu;
-    //static int count = 0;
+
 
 
     public Uczestnik(String imie, String nazwisko, String nazwaKursu) {

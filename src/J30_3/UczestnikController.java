@@ -3,12 +3,10 @@ package J30_3;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class UczestnikController {
-
+public class UczestnikController{
 
     ArrayList<Uczestnik> uczestnikLista = new ArrayList<>();
     Scanner sc = new Scanner(System.in);
-
 
     public UczestnikController() {
         while (true) {
@@ -34,6 +32,7 @@ public class UczestnikController {
         String imie;
         String nazwisko;
         String nazwaKursu;
+        int student = 0;
         System.out.println("Podaj imię");
         imie = sc.nextLine();
         System.out.println("Podaj nazwisko");
@@ -43,6 +42,7 @@ public class UczestnikController {
         Uczestnik uczestnik = new Uczestnik(imie, nazwisko, nazwaKursu);
         uczestnikLista.add(uczestnik);
         Kurs.student++;
+
     }
 
     public void delUser() {
@@ -52,7 +52,8 @@ public class UczestnikController {
         for (Uczestnik tmp : uczestnikLista) {
             if (tmp.getNazwisko().equals(nazwisko)) {
                 uczestnikLista.remove(tmp);
-                Kurs.student--;
+               // kursLista.
+               // Kurs.student--;
                 break;
             }
         }

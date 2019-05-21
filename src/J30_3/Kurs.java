@@ -1,6 +1,6 @@
 package J30_3;
 
-public class Kurs extends Uczestnik  {
+public class Kurs extends Uczestnik {
 
     public Kurs(){
     }
